@@ -16,11 +16,35 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+.project_corousal{
+    padding: 2rem;
+    border-bottom: 1px solid #000;
+    
+}
 
-.slide-container div:first-child{
+.project_name{
+    text-align: center;
+    width: fit-content;
+    padding: 0.5rem 0; 
+    border: 1px solid #000;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+.project_name a{
+    padding: 2rem;
+}
+.project_name a:hover{
+    border-color: #fff;
+    font-size: 1.1rem;
+    background-color: #000;
+    color: #fff;
+}
+
+.project_title{
     font-size: 1.5rem;
     font-weight: bold;
-    text-decoration: underline;
     margin-bottom: 2rem;
 }
 

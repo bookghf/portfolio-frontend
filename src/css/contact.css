@@ -3,6 +3,7 @@
     color: #fff;
     width: 100%;
     padding: 3rem 0;
+    margin-top: 3rem;
 }
 .contact > .contact_wrapper{
     width: max-content;
@@ -11,6 +12,9 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+.contact_form p{
+    margin-right: 1rem;
 }
 .contact_form{
     font-size: 2rem;
@@ -25,25 +29,55 @@
     width: 80vw;
     max-width: 500px;
     color: #fff;
+    padding-left: 1rem;
+    padding-right: 1rem;
     background-color: #000;
     border: 1px solid steelblue;
-    height: 3rem;
+    min-height: 3rem;
 }
 
-.button_wrapper button{
+.contact_form textarea{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 80vw;
+    max-width: 500px;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid steelblue;
+    min-height: 3rem;
+}
+
+.button_wrapper{
+    margin-top: 10px;
+    display: flex;
+}
+.button_wrapper > *{
     font-size: 1.2rem;
     font-weight: lighter;
     color: #fff;
     background-color: #000;
     border: 1px solid steelblue;
     margin: 0 1rem;
+    padding: 0.2rem 0.5rem;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+
+}
+.button_wrapper > div{
+
+    font-weight:bold;
+
+}
+.button_wrapper >*:hover{
+    transform: translateY(-5px);
 }
 .social_contact_wrapper{
     margin-left: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 @media screen and (max-width: 720px) {
@@ -68,7 +102,6 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 1rem;
+        gap: 2rem;
     }
 }

@@ -1,6 +1,6 @@
 .about{
     margin: 0 auto;
-    padding-bottom: 45rem;
+    padding-bottom: 35rem;
     padding-top: 5rem;
     background-color: #000;
     color: #fff;
@@ -113,8 +113,10 @@
     align-items: center;
     font-size: 75px;
     position: absolute;
-    top:20%;
+    bottom: 0;
+    transform: translateY(30%);
     left:50%;
+
     perspective: 10em;
     perspective-origin: 50% calc(50% - 2em);
     --boxColor : #0ff7;
@@ -248,10 +250,4 @@
         #111 0deg 90deg , 
         #222 90deg 180deg);
     background-size:100%, 1em 1em;
-}
-
-@media screen and (max-width: 827px){
-    .ball_animation{
-        top: 50%;
-    }
 }
